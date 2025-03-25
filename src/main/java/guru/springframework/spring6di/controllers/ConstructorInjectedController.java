@@ -1,9 +1,11 @@
 package guru.springframework.spring6di.controllers;
 
 import guru.springframework.spring6di.services.GreetingService;
+import org.springframework.stereotype.Controller;
 
 // This is the best way to do dependency injection
 
+@Controller
 public class ConstructorInjectedController {
     private final GreetingService greetingService;
 
